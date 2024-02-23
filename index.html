@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html>
+  <head> 
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Listing</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head> 
+  <body>    
+  <nav class="navbar navbar-expand-sm navbar-expand-md  navbar-expand-lg   navbar-expand-xl   navbar-dark fixed-top" 
+   style="background-color: black;">
+    <div class="container-fluid">
+      <a class="navbar-brand ms-2" href="#"><span style="font-family: cursive; font-size:25px; color:dodgerblue ;">City</span>
+        <span style="font-size:25px ;font-family: cursive; ">Listing</span> </a>
+      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="collapsibleNavbar">
+        <ul class="navbar-nav ms-3  ps-3 ">
+          <li class="nav-item ">
+            <a class="nav-link search1" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link search1" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown mt-2">
+            <a class="nav-link dropdown-toggle d-inline border     rounded-3 border-2 trip1 search1"  style="border-color:dodgerblue !important"
+            href="#" role="button" data-bs-toggle="dropdown"><span class="sectionb1">T</span>rip</a>
+            <ul class="dropdown-menu mt-2 text-uppercase sectiona ">
+              <li><a class="dropdown-item "  href="#">Cairo</a></li>
+              <li><a class="dropdown-item "  href="#">Paris</a></li>
+              <li><hr class="dropdown-divider  border-2" style="border-color:dodgerblue !important"></hr></li>
+              <li><a class="dropdown-item "  href="#">Rome</a></li>
+              <li><a class="dropdown-item "   href="#">New york</a></li>
+              <li><a class="dropdown-item " href="#">Riyadh</a></li>
+              <li><a class="dropdown-item "   href="#">Brazil</a></li>
+              <li><a class="dropdown-item "   href="#">More...</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link search1" href="#">About</a>
+          </li>   
+        </ul>
+        <from class="d-flex ms-auto ">
+          <i class="fas fa-search text-white mt-2  search1" style="font-size:30px;"></i>
+            <button class="btn   mx-3 rounded-4   sectionb3 " type="button" style=" color:white ;">Search</button> 
+             <button  type ="button" class="btn sectionb3 rounded-4  "    data-bs-toggle="modal" data-bs-target="#my"
+            style="color:white ;" >Login</button> 
+          </from>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  <div class="modal fade"  id="my">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header text-white b sectionb3">
+         Login
+        </div>
+        <div class="modal-body">
+            <form class="">
+                <div class="mb-3 mt-3">
+                  <label for="uname" class="form-label sectionb1  "  >Email:</label>
+                  <input type="text" class="form-control sectionb4 " id="uname"   name="uname" required>
+                  <div>We will never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="pwd" class="form-label sectionb1 " >Password:</label>
+                  <input type="password" class="form-control sectionb4 "   id="pwd"  name="pswd" required>
+                </div>
+                <div class="form-check form-switch  ">
+                    <input class="form-check-input sectionb1 sectionb3 sectionb4  "  type="checkbox" id="mySwitch" name="darkmode" value="yes" checked>
+                    <label class="form-check-label " for="mySwitch">Remmember me</label>
+                </div>
+        </div>
+        <div class="modal-footer d-flex justify-content-between ">
+            <button type="button " class="btn   sectionb3  " data-bs-dismiss="modal">Login</button>
+          <button type="button" class="btn    sectionb3" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div> 
+
+
+
+    <div class="iconswebsite bg ">
+      <i class="fab fa-facebook-square d-block mb-2 iconswebsite1 " style="color:rgb(48, 48, 227)"></i>
+      <i class="fab fa-whatsapp-square d-block mb-2 iconswebsite1"  style="color:green !important ;"></i>
+      <i class="fab fa-twitter-square d-block mb-2 iconswebsite1" style="color:aqua"></i>
+      <i class="fab fa-linkedin d-block mb-2 iconswebsite1"  style="color:rgb(48, 48, 227)"></i>
+      <i class="fab fa-instagram-square d-block mb-2 iconswebsite1" style="color: rgba(197, 45, 129, 0.911);"></i>
+    </div>
+
+
+
+ 
+ <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+  </div>
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/cairo.jpg" alt="Los Angeles" class="d-block" style="width:100%; height:100vh;">
+      <div class="carousel-caption rounded-3 w-50 container" style="background-color: rgba(0,0,0,0.4);">
+       <h2 class="display-5">CAIRO</h2>
+        <p class="h5 ">We had such a great time in EGYPT</p>
+        <button type="button" class="btn  sectionb3" style="color:white">Visit Us</button>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/newyork.webp" alt="New York" class="d-block" style="width:100% ; height:100vh;">
+      <div class="carousel-caption rounded-3 w-50 container" style="background-color: rgba(0,0,0,0.4);">
+        <h2 class="display-5" >NEW YORK</h2>
+        <p class="h5">Thank you, AMERICA</p>
+        <button type="button" class="btn  sectionb3" style="  color:white">Visit Us</button>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="images/paris.jpg" alt="New York" class="d-block" style="width:100% ; height:100vh;">
+      <div class="carousel-caption rounded-3 w-50 container" style="background-color: rgba(0,0,0,0.4);">
+        <h2 class="display-5">PARIS</h2>
+        <p class="h5">I would love to visit FRANCE</p>
+        <button type="button" class="btn sectionb3 " style="  color:white">Visit Us</button>
+      </div> 
+    </div>
+    <div class="carousel-item">
+      <img src="images/italy .webp" alt="New York" class="d-block" style="width:100% ; height:100vh;">
+      <div class="carousel-caption rounded-3 w-50 container" style="background-color: rgba(0,0,0,0.4);">
+        <h2 class="display-5">Rome</h2>
+        <p class="h5">We love this city</p>
+        <button type="button" class="btn sectionb3 " style=" color:white">Visit Us</button>
+      </div>  
+    </div>
+  </div>
+  <button class="carousel-control-prev "  type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon sectionb3" style=" border-radius: 10px;" ></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon  sectionb3" style="  border-radius: 10px;" ></span>
+  </button>
+</div>
+
+
+
+
+<div class="container-fluid mt-3 text-white ps-4 rounded-3 pt-3 pb-5   "  style="background-color:rgb(159, 193, 228)">
+  <h3 class="pt-3 text-dark">welcome</h3>
+  <p class="text-capitalize"> are you planning to visit egypt? we offer the ultimate tour in egypt , covering cairo 
+    ,alex from a one day trip to a 10 day dream vacation we will take care of all your needs book hotels 24/7 customer service.. </p>
+  <button class=" rounded-3 mt-2 p-3 h3 text-dark sectionb3  border-0" >Learn more</button>
+  </div>
+
+
+  
+<div class="display-5 text-center  text-dark p-1 rounded-3 mb-5  container mt-3   " > POPULAR DESTINATIONS IN THE WORLD</div>
+<div class=" container row row1 mx-auto " >
+  <div class=" container px-4 mt-3 pb-4   col-sm-12 col-md-6  col-lg-4 try11 "  >
+    <div class="card card1"  >
+      <img class="card-img-top mx-auto" src="images/download.jpeg" alt="Card image" style="width:90% ;height:400px;">
+      <div class="card-body d-flex justify-content-between ">
+        <div>
+        <h4 class="card-title  ">CAIRO</h4>
+        <p class="card-text  sectionb1">in South of EGYPT </p>
+        </div>
+        <a href="#" class=" mt-2 p-2 sectionb2">Kown More</a>
+      </div>
+    </div>
+</div>
+<div class="  container  px-4  mt-3 pb-4  col-sm-12  col-md-6 col-lg-4  try11"  >
+  <div class="card card1"  >
+    <img class="card-img-top mx-auto" src="images/location2.png" alt="Card image" style="width:90% ;height:400px;">
+    <div class="card-body d-flex justify-content-between">
+      <div>
+      <h4 class="card-title tex-danger">PARIS</h4>
+      <p class="card-text sectionb1">Paris, France's capital </p>
+      </div>
+      <a href="#" class="  mt-2 p-2 sectionb2">Kown More</a>
+    </div>
+  </div>
+</div>
+<div class="  container px-4   mt-3 pb-4  col-sm-12 col-md-6 col-lg-4  try11"  >
+  <div class="card card1"  >
+    <img class="card-img-top mx-auto" src="images/location3.png" alt="Card image" style="width:90% ;height:400px;">
+    <div class="card-body d-flex justify-content-between">
+      <div>
+      <h4 class="card-title tex-danger">ROME</h4>
+      <p class="card-text sectionb1"> population grew quickly</p>
+      </div>
+      <a href="#" class="sectionb2 mt-2 p-2">Kown More</a>
+    </div>
+  </div>
+</div>
+<div class="  container px-4   mt-3 pb-4   col-sm-12 col-md-6 col-lg-4  try11"  >
+  <div class="card card1"  >
+    <img class="card-img-top mx-auto" src="images/location4.png" alt="Card image" style="width:90% ;height:400px;">
+    <div class="card-body d-flex justify-content-between">
+      <div>
+      <h4 class="card-title tex-danger">London</h4>
+      <p class="card-text sectionb1">largest city of England</p>
+      </div>
+      <a href="#" class="sectionb2  mt-2 p-2">Kown More</a>
+    </div>
+  </div>
+</div>
+<div class="  container px-4  mt-3 pb-4     col-sm-12 col-md-6 col-lg-4  try11"  >
+  <div class="card card1"  >
+    <img class="card-img-top mx-auto" src="images/location5.png" alt="Card image" style="width:90% ;height:400px;">
+    <div class="card-body d-flex justify-content-between">
+      <div>
+      <h4 class="card-title tex-danger">Moscow</h4>
+      <p class="card-text sectionb1">A great city in Russia</p>
+      </div>
+      <a href="#" class="sectionb2  mt-2 p-2">Kown More</a>
+    </div>
+  </div>
+</div>
+<div class="  container px-4  mt-3 pb-5    col-sm-12 col-md-6 col-lg-4 try11 "  >
+  <div class="card card1"  >
+    <img class="card-img-top mx-auto" src="images/location6.png" alt="Card image" style="width:90% ;height:400px;">
+    <div class="card-body d-flex justify-content-between">
+      <div>
+      <h4 class="card-title tex-danger">Madrid</h4>
+      <p class="card-text sectionb1">has almost 3.4 million</p>
+      </div>
+      <a href="#" class=" sectionb2  mt-2 p-2">Kown More</a>
+    </div>
+  </div>
+</div>
+</div>
+<div class=" container row row1 mx-auto" >
+  <div class="  container px-4  pb-5 mt-3  col-sm-12  col-md-6   col-lg-4  try11 "  >
+    <div class="card card1"  >
+      <img class="card-img-top mx-auto" src="images/photo-1477959858617-67f85cf4f1df.avif" alt="Card image" style="width:90% ;height:400px;">
+      <div class="card-body d-flex justify-content-between">
+        <div>
+        <h4 class="card-title tex-danger">NEPAL</h4>
+        <p class="card-text sectionb1">Very nice view </p>
+        </div>
+        <a href="#" class="sectionb2 mt-2 p-2">Kown More</a>
+      </div>
+    </div>
+</div>
+<div class="  container px-4  mt-3 pb-5 col-sm-12  col-md-6  col-lg-4 try11 ">
+  <div class="card card1" >
+    <img class="card-img-top mx-auto" src="images/city-2567670_640.jpg" alt="Card image" style="width:90% ;height:400px;">
+    <div class="card-body d-flex justify-content-between">
+      <div>
+      <h4 class="card-title tex-danger text-uppercase">indonesia</h4>
+      <p class="card-text sectionb1">Paris, France's capital </p>
+      </div>
+      <a href="#" class="sectionb2  mt-2 p-2">Kown More</a>
+    </div>
+  </div>
+</div>
+</div>
+
+
+   <div>
+    <h1 class="display-5 text-center mt-3 p-3 rounded-3 container text-dark    text-capitalize"  >The most famous cities in the world</h1>
+  </div>
+<div class="accordion container-fluid mt-3" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header border-danger" id="headingOne">
+      <button class="accordion-button  sectionb1 "  type="button " data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        <h2 >CAIRO CITY</h2>
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+         <strong> Cairo, Egypt’s sprawling capital</strong>, is set on the Nile River. At its heart is Tahrir Square and the vast Egyptian Museum, a trove of 
+          antiquities including royal mummies and gilded King Tutankhamun artifacts. Nearby, Giza is the site of the iconic pyramids and Great 
+          Sphinx, dating to the 26th century BC. <code>In Gezira Island’s </code> leafy Zamalek district, 187m Cairo Tower affords panoramic city views.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button  collapsed sectionb1"    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        <h2 >NRW YORK CITY</h2>
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong> New York City comprises 5 boroughs </strong> sitting where the Hudson River meets the Atlantic Ocean. At its core is Manhattan, a densely 
+        populated borough that’s among the world’s major commercial, financial and cultural centers. Its iconic sites include skyscrapers 
+        such as the Empire State Building and <code>sprawling Central Park.</code> Broadway theater is staged in neon-lit Times Square
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed sectionb1 "    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        <h2>Rome CITY</h2>
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>Rome is the capital city of Italy.</strong> It is also the capital of the Lazio region, the centre of the Metropolitan City of Rome Capital, 
+        and a special <code>comune named Comune </code>di Roma Capitale
+      </div>
+    </div>
+  </div>
+</div>
+  <hr class="my-4 border-2 ">
+  <div class="div1 "></div> 
+
+
+
+
+<h3 class="text-center sectionb1 my-4 " style="font-family: cursive;">We are offering for you</h3>
+  <h1 class="text-center text-dark  mt-3 mb-5"> Featured Categories</h1>
+
+  <div class="row mx-auto container  mb-5 ">
+     
+    <div class="text-center     border border-dark rounded-3 bg-white   container  mb-3  col-sm-12 col-md-6 col-lg-4 col-xl-2 after2"
+    style="width: 300px;">
+    <div class="after1 " >
+      <i class="fas fa-bed sectionb1  my-5 after3 " style="font-size: 50px;" ></i>
+      <h2 class="mb-5">Leaving Hotel</h2>
+      <h6 style="color: rgba(0,0,0,0.6); ">Must explain your how this</h6>
+      <h6 style="color: rgba(0,0,0,0.6);">keind denoun pleasure</h6>
+      <h5 class="my-5">View Details</h5>
+    </div>
+    </div>
+    
+    <div class="text-center    border border-dark rounded-3 bg-white  container   mb-3   col-sm-12 col-md-6 col-lg-4 col-xl-2 after2"
+    style="width: 300px;">
+    <div class="after1" >
+    <i class="fas fa-glass-cheers sectionb1  my-5 " style="font-size: 50px;"></i>
+      <h2 class="mb-5  ">Night life</h2>
+      <h6 style="color: rgba(0,0,0,0.6);">Must explain your how this</h6>
+      <h6 style="color: rgba(0,0,0,0.6);">keind denoun pleasure</h6>
+      <h5 class="my-5">View Details</h5>
+    </div>
+    </div>
+    <div class="text-center    border border-dark rounded-3 bg-white    container mb-3 col-sm-12 col-md-6 col-lg-4 col-xl-2 after2"
+    style="width: 300px;">
+    <div class="after1" >
+    <i class="fas fa-home sectionb1  my-5 " style="font-size: 50px;"></i>
+      <h2 class="mb-5 ">Culture Place</h2>
+      <h6 style="color: rgba(0,0,0,0.6);">Must explain your how this</h6>
+      <h6 style="color: rgba(0,0,0,0.6);">keind denoun pleasure</h6>
+      <h5 class="my-5">View Details</h5>
+    </div>
+    </div>
+    <div class="text-center    border border-dark rounded-3 bg-white   container   mb-3  col-sm-12 col-md-6 col-lg-4 col-xl-2 after2"
+    style="width: 300px;">
+    <div class="after1" >
+    <i class="fas fa-hamburger sectionb1  my-5 " style="font-size: 50px;"></i>
+      <h2 class="mb-5 ">Resturent</h2>
+      <h6 style="color: rgba(0,0,0,0.6);">Must explain your how this</h6>
+      <h6 style="color: rgba(0,0,0,0.6);">keind denoun pleasure</h6>
+      <h5 class="my-5">View Details</h5>
+    </div>
+    </div>
+  </div>
+     
+
+
+
+ <div class="div2 pl-5 "></div>
+<hr class="my-4 border-2 ">
+<div class="display-5 text-center  py-4 mb-5 text-dark p-1  rounded-3 container  "> THANKS FOR</div>
+  <div class=" container row  mx-auto">
+<div class="  section1 container   mb-5 col-sm-12 col-md-6 col-lg-4 "  >
+<div class="card card2 img-fluid text-white"  >
+  <img class="card-img-top" src="images/cheerful-stylish-male-freelancer-being-glad-have-successful-day_273609-8176.jpg" 
+    alt="Card image" style="height:450px">
+  <div class="div3"></div>
+  <div class="card-img-overlay my-4">
+    <h4 class="card-title">All thanks and appreciation</h4>
+    <h6><i class="far fa-clock"></i> February 12,2024</h6>
+    <div class="my-5 py-5 pt-auto">
+    <img src="images/cheerful-stylish-male-freelancer-being-glad-have-successful-day_273609-8176.jpg"
+      class="rounded-circle mt-5  "  alt="" style="width:100px; height: 150px;">
+     <p class="  ">The programmer. Ahmed Zakaria</p>
+     </div>
+  </div>
+  </div>
+  
+</div>
+<div class="  section1 container    mb-5 col-sm-12  col-md-6 col-lg-4"    >
+  <div class="card card2 img-fluid text-white"  >
+    <img class="card-img-top" src="images/ahmed.avif" alt="Card image" style="  height:450px">
+    <div class="div3"></div>
+     
+    <div class="card-img-overlay my-4">
+      <h4 class="card-title">All thanks and appreciation</h4>
+      <h6><i class="far fa-clock"></i> February 12,2024</h6>
+      <div class="my-5 py-5 pt-auto">
+      <img src="images//ahmed.avif"  class="rounded-circle mt-5  "  alt="" style="width:100px; height: 150px;">
+       <p class=" "> The programmer. Ahmed Mohammed</p>
+       </div>
+    </div>
+    </div>
+    
+  </div>
+  <div class="  section1 container   mb-5 col-sm-12 col-md-6 col-lg-4" >
+    <div class="card card2 img-fluid text-white"   >
+      <img class="card-img-top" src="images/Elon_Musk_Royal_Society_(crop2).jpg" alt="Card image" style="  height:450px">
+      <div class="div3"></div>
+       
+      <div class="card-img-overlay my-4">
+        <h4 class="card-title">All thanks and appreciation</h4>
+        <h6><i class="far fa-clock"></i> February 12,2024</h6>
+        <div class="my-5 py-5 pt-auto">
+        <img src="images/Elon_Musk_Royal_Society_(crop2).jpg"  class="rounded-circle mt-5  "  alt="" style="width:100px; height: 150px;">
+         <p class=" ">The programmer. Elon Musk</p>
+         </div>
+      </div>
+      </div>
+      
+    </div>
+</div>
+
+
+
+
+  <div class="works1">
+    <div class="images1">
+      <div class="overlay "></div>
+      <h4 class="works2  sectionb1">Subscribe out newslatter</h4>
+     <h2 class="text-white works3 display-5 ">Subscribe out newslatter</h2>
+     <form action="">
+     <div class="input-group mb-3 works4 ">
+      <input type="text" class="form-control my-1" placeholder="What are you looking for?" name="email">
+      <button type="submit" class="btn btn-primary input-group-text px-5 my-1">Send Now</button>
+      </div>
+     </form>
+   </div>
+    </div>
+ 
+
+
+      <div class=" container" >
+      <h4 class="text-center sectionb1 my-5"  style="font-family: cursive;">Our client testimonials</h4>
+       <h1 class="text-center my-5 display-5 ">What our client say</h1>
+       <p class="text-center my-5 h4 " style="color: rgba(0,0,0,0.5);">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem nulla similique voluptatum 
+        voluptate modi repellendus enim laudantium labore odio amet consectetur, adipisicing elit. Exercitationem nulla similique voluptatum 
+        llendus enim laudantium labore odio amet consectetur,</p>
+        <div class="container text-center">
+          <img src="images/cheerful-stylish-male-freelancer-being-glad-have-successful-day_273609-8176.jpg" class="rounded-circle  " style="height:100px; width: 100px; display: inline"   alt="">
+          <h4  class=" ms-3 sectionb1" style="display: inline ;">Olivia jems</h4>
+          </div>
+       </div> 
+<hr class="my-5 border-2">
+
+
+
+
+<div class="text-center h1  my-2  text-dark"  >WORLD NEWS</div>
+
+   <div class=" section31 mx-auto rounded-5  mb-5 bg-white " style=" width:79%; overflow: hidden;">
+    <div class=" row d-flex flex-wrap-reverse  " >
+      <div class="   col-sm-12 col-lg-8" >  
+        <div class="mt-5 ms-4">
+        <h1 class="sectionb1">Podcast Title </h1>
+        <p class="" style="width:167px"><i class="fas fa-x-ray"></i>Mon, May 25th 2024</p>
+         <div class="line1 mb-3"></div>
+        <p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nam natus dolorum,
+           ad perspiciatis adipisci iure? Praesentium nisi animi 
+          saepe consequuntur iure in earum nam magnam, quis, ratione voluptatibus neque.</p>
+          <div class="container mt-5 pt-5   ">
+             <span class="section101"><button type="button" class="btn   my-5 text-white bg-dark  section10"><i class="fas fa-lock me-1 "></i>Podcast</button></span>
+             <span class="section101"> <button type="button" class="btn    my-5 text-white bg-dark  section10 "  ><i class="fas fa-clock me-1"></i>55 mins</button></span>
+              <span class="section101"><button type="button" class="btn   my-5 text-white bg-dark  section10"   ><i class="fas fa-play me-1"></i>Play Episode</button></span>
+            </div>
+            </div>
+      </div>
+      <div class=" col-sm-12  col-lg-4">
+       
+        <img src="images/licensed-image (1).jpeg"  class=" img-fluid h-100  section310" alt="" 
+        style="clip-path: polygon(0 0, 100% 0, 100% 100%, 9% 100%);">
+        </div>
+    </div>    
+  </div>
+  <div class="section31 mx-auto rounded-5  mb-5 bg-white " style="  width:79%; overflow: hidden; ">
+    <div class="row " >
+      <div class=" col-sm-12 col-lg-4"    >
+        <img src="images/zoomed-out-landscapes-17-2.jpg"  class=" img-fluid h-100" alt="" style="clip-path: polygon(0 0, 100% 0, 87% 100%, 0 100%);">
+      </div>
+      <div class="   col-sm-12 col-lg-8" >  
+        <div class="mt-5 ms-4">
+        <h1 class="sectionb1">Podcast Title </h1>
+        <p class="" style="width:167px"><i class="fas fa-x-ray"></i>Mon, May 25th 2024</p>
+         <div class="line1  line2 mb-3"  ></div>
+        <p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nam natus dolorum,
+           ad perspiciatis adipisci iure? Praesentium nisi animi 
+          saepe consequuntur iure in earum nam magnam, quis, ratione voluptatibus neque.</p>
+          <div class="container mt-5 pt-5 ">
+            <span class="section101"><button type="button" class="btn  my-5 text-white bg-dark section102"><i class="fas fa-lock me-1"></i>Podcast</button></span>
+              <span class="section101"> <button type="button" class="btn   my-5 text-white bg-dark section102 "><i class="fas fa-clock me-1"></i>55 mins</button></span>
+                <span class="section101"><button type="button" class="btn    my-5 text-white bg-dark section102 "><i class="fas fa-play me-1"></i>Play Episode</button></span>
+            </div>
+            </div>
+      </div>
+    </div>    
+  </div>
+  <div class="section31  mx-auto rounded-5  mb-5 bg-white " style="  width:79%; overflow: hidden; ">
+    <div class="row d-flex flex-wrap-reverse " >
+      <div class="   col-sm-12 col-lg-8" >  
+        <div class="mt-5 ms-4">
+        <h1 class="sectionb1">Podcast Title </h1>
+        <p class="" style="width:167px"><i class="fas fa-x-ray"></i>Mon, May 25th 2024</p>
+         <div class="line1 line3 mb-3"></div>
+        <p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nam natus dolorum,
+           ad perspiciatis adipisci iure? Praesentium nisi animi 
+          saepe consequuntur iure in earum nam magnam, quis, ratione voluptatibus neque.</p>
+          <div class="container mt-5 pt-5 ">
+            <span class="section101"><button type="button" class="btn  my-5 text-white bg-dark section103 "><i class="fas fa-lock me-1"></i>Podcast</button></span>
+              <span class="section101"><button type="button" class="btn   my-5 text-white bg-dark  section103 "><i class="fas fa-clock me-1"></i>55 mins</button></span>
+                <span class="section101"> <button type="button" class="btn    my-5 text-white bg-dark section103 "><i class="fas fa-play me-1"></i>Play Episode</button></span>
+            </div>
+            </div>
+      </div>
+      <div class=" col-sm-12 col-lg-4"    >
+        <img src="images/pexels-james-wheeler-417074 (1).jpg"  class=" img-fluid h-100" alt="" style="clip-path: polygon(0 0, 100% 0, 100% 100%, 9% 100%);">
+      </div>
+    </div>    
+  </div>
+  <div class=" section31 mx-auto rounded-5  mb-5 bg-white  " style="  width:79%; overflow: hidden; margin-bottom: 120px !important; ">
+    <div class="row " >
+      <div class=" col-sm-12 col-lg-4"    >
+        <img src="images/zoomed-out-landscapes-1-1.jpg"  class=" img-fluid h-100" alt="" style="clip-path: polygon(0 0, 100% 0, 87% 100%, 0 100%);">
+      </div>
+      <div class="   col-sm-12 col-lg-8" >  
+        <div class="mt-5 ms-4">
+        <h1 class="sectionb1">Podcast Title </h1>
+        <p class="" style="width:167px"><i class="fas fa-x-ray"></i>Mon, May 25th 2024</p>
+         <div class="line1 line4 mb-3"></div>
+        <p class="h5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet nam natus dolorum,
+           ad perspiciatis adipisci iure? Praesentium nisi animi 
+          saepe consequuntur iure in earum nam magnam, quis, ratione voluptatibus neque.</p>
+          <div class="container mt-5 pt-5 ">
+            <span class="section101"><button type="button" class="btn  my-5 text-white bg-dark  section104"><i class="fas fa-lock me-1"></i>Podcast</button></span>
+            <span class="section101"><button type="button" class="btn   my-5 text-white bg-dark  section104"><i class="fas fa-clock me-1"></i>55 mins</button></span>
+            <span class="section101"> <button type="button" class="btn    my-5 text-white bg-dark section104 "><i class="fas fa-play me-1"></i>Play Episode</button></span>
+            </div>
+            </div>
+      </div>
+    
+    </div>    
+    </div> 
+    <h3 class="text-center sectionb1 mt-5 " style="font-family: cursive;">Our blog</h3>
+  <h1 class="text-center text-dark  mt-2 mb-5"> News and tips</h1>
+      
+    <div class=" container row  mx-auto" >
+      <div class="  container px-4  pb-5 mt-3  col-sm-12  col-md-6   col-lg-4  section15 "  >
+        <div class="card ">
+          <img class="card-img-top mx-auto section151" src="images/home_blog1.png" alt="Card image" style="width:90% ;height:400px;">
+          <div class="card-body d-flex justify-content-between">
+            <div>
+            <h4 class="card-title sectionb1">HEALTH & CARE</h4>
+            <p class="card-text  " style="color:black ">The Best SPA Salons For Your Ralaxtion </p>
+            <h6 style="color: rgba(0,0,0,0.5)">February 22, 2024 by Steve</h6>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="  container px-4  mt-3 pb-5 col-sm-12  col-md-6  col-lg-4  section15 ">
+      <div class="card ">
+        <img class="card-img-top mx-auto section151" src="images/home_blog2.png" alt="Card image" style="width:90% ;height:400px;">
+        <div class="card-body d-flex justify-content-between">
+          <div>
+          <h4 class="card-title sectionb1">HEALTH & CARE</h4>
+          <p class="card-text  " style="color: black">The Best SPA Salons For Your Ralaxtion </p>
+          <h6 style="color: rgba(0,0,0,0.5)">February 22, 2024 by Steve</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="  container px-4  mt-3 pb-5 col-sm-12  col-md-6  col-lg-4 section15  ">
+      <div class="card ">
+        <img class="card-img-top mx-auto section151" src="images/home_blog3.png" alt="Card image" style="width:90% ;height:400px;">
+        <div class="card-body d-flex justify-content-between">
+          <div>
+          <h4 class="card-title sectionb1">HEALTH & CARE</h4>
+          <p class="card-text  " style="color: black">The Best SPA Salons For Your Ralaxtion </p>
+          <h6 style="color: rgba(0,0,0,0.5)">February 22, 2024 by Steve</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+  
+  <div class="text-center h1  my-3 text-dark" >JOIN US</div>
+ 
+  <div class="  row container   mx-auto mb-5">
+    <div class="section4 text-center  p-3  bg-white display-1 col-sm-7 col-md-6 col-lg-4 col-xl-2  container rounded-3 mb-4" style="width:250px" >
+       <div class="sectionb1 h2">Subscribe Now</div>
+       <a href="#" class=""> <i class="fab fa-twitter rounded-3 px-2 py-1 try12"style="color:aqua ;background-color:black"></i></a>
+      <div class="sectionb1 h4"> Go to link</div>
+    </div>
+    <div class="section4  text-center p-3 bg-white display-1 col-sm-7 col-md-6 col-lg-4 col-xl-2 container rounded-3 mb-4" style="width:250px"  >
+      <div class=" sectionb1 h2">Subscribe Now</div>
+      <a href="#"><i class="fab fa-whatsapp   rounded-3 px-2 py-1 try12" style=" color:green; background-color:black "></i></a>
+      <div class="sectionb1 h4"> Go to link</div>
+    </div>
+    <div class="section4  text-center p-3 bg-white display-1 col-sm-7 col-md-6 col-lg-4 col-xl-2   container rounded-3 mb-4"  style="width:250px" >
+      <div class="sectionb1 h2">Subscribe Now</div>
+      <a href="#"><i class="fab fa-linkedin-in  rounded-3 px-2 py-1 try12"style="color:color:rgb(48, 48, 227); background-color:black"></i></a>
+      <div class="sectionb1 h4"> Go to link</div></div>
+    <div class="section4  text-center p-3 bg-white display-1 col-sm-7 col-md-6 col-lg-4 col-xl-2  container rounded-3 mb-4" style="width:250px"  >
+      <div class="sectionb1 h2">Subscribe Now</div>
+      <a href="#"><i class="fab fa-instagram rounded-3 px-2 py-1   " style="color:rgba(197, 45, 129, 0.911);background-color:black; "></i></a>
+      <div class="sectionb1 h4"> Go to link</div></div>
+  </div>
+
+
+     
+  
+<div class="row  mx-auto " style=" background-color: black;">
+    <div class=" col-sm-12 col-md-6 col-lg-4 container  ">
+          <div class="mb-5 mt-3 ms-3"></div>
+        <div class="container text-center ">
+        <img src="images/location3.png" class="rounded-circle   " style="height:100px; width: 100px; display: inline"   alt="">
+        <h4  class=" ms-3" style="display: inline  ;color:white">Good City</h4>
+        </div>
+        <div class="mt-5 mb-3 mx-3"></div>
+        <div class="text-center " style="color: rgb(197, 187, 187)" >
+         <h5 class="section6">Tel : 000-000-000</h5>
+         <h5 class="section6">Address : EGYPT</h5>
+         <h5 class="section6">Fax : 000-000-000</h5>
+         </div>
+        </div>
+         <div class=" col-sm-12 col-md-6 col-lg-4 container ">
+          <div class="mb-5 mt-3 ms-3"></div>
+        <div class="container text-center ">
+        <img src="images/location5.png" class="rounded-circle  " style="height:100px; width: 100px; display: inline"   alt="">
+        <h4  class=" ms-3" style="display: inline ;color:white">Important City</h4>
+        </div>
+        <div class="mt-5 mb-3 ms-3"></div>
+        <div class="text-center " style="color: rgb(197, 187, 187)" >
+          <h5 class="section6" >Visit Us</h5>
+          <h5 class="section6">Take alook</h5>
+          <h5 class="section6">Your health is more important</h5>
+          </div>
+      </div>
+      <div class=" col-sm-12 col-md-6 col-lg-4 container ">
+        <div class=" mb-5 mt-3 ms-3"></div>
+      <div class="container text-center">
+      <img src="images/location2.png" class="rounded-circle   " style="height:100px; width: 100px; display: inline"   alt="">
+      <h4  class=" ms-3" style="display: inline; color:white">Vision</h4>
+      </div>
+      <div class="mt-5 mb-3 ms-3"></div>
+      <div class="text-center " style="color: rgb(197, 187, 187)" >
+        <h5 class="section6">Serveices for all</h5>
+        <h5 class="section6">Provide best best serveices</h5>
+        <h5 class="section6">Your will be better than before</h5>
+        </div>
+      </div>
+      <div class="section52 my-3 "></div>
+        <h6 class="my-3  text-center sectionb1">Copy right ©2024 All rights reserved | This template is made with by Ahmed Zakaria</h6>
+        <div class=" my-3 "></div>
+        </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+  </html>
