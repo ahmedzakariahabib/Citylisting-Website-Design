@@ -12,5 +12,5 @@
 
 [Live Demo](https://ahmedzakariahabib.github.io/Citylisting-Website-Design/)
 
-[Github Repo](https://github.com/ahmedzakariahabib/Citylisting-Website-Design)
+[Github RePo](https://github.com/ahmedzakariahabib/Citylisting-Website-Design)
  
